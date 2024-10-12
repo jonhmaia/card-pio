@@ -6,69 +6,141 @@
     <title>Casa Bueno Cardápio</title>
     <link rel="stylesheet" href="style.css" />
     <style>
+      body {
+        background-color: #011559;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #fff;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #efe7d6; /* Fundo rosa */
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        border-radius: 6px;
+      }
+
+      .header img {
+        max-width: 100%;
+        height: auto;
+      }
+      .header nav ul {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .header nav ul li {
+        margin-left: 20px;
+        ;
+      }
+
+      .header nav ul li a {
+        color: #011559; /* Azul-escuro para o texto */
+        text-decoration: none;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+
+      .header nav ul li a:hover {
+        background-color: #011559; /* Azul-escuro no hover */
+        color: #efe7d6; /* Rosa no texto ao passar o mouse */
+        transition: background-color 0.3s ease;
+      }
+
+      section {
+        padding: 20px;
+        margin: 20px 0;
+        background-color: #fff;
+        color: #000;
+        border-radius: 8px;
+      }
+
+      h2 {
+        color: #011559;
+      }
+
       .image img {
         max-width: 100%;
         height: auto;
         display: block;
         margin: 0 auto 20px;
       }
-      .header {
-        display: flex;
-        flex-direction: row;
-        background-color: #000;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-        margin-bottom: 10px;
-        justify-content: space-between;
-      }
-      .header ul {
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
+
       /* Media query para dispositivos móveis */
       @media (max-width: 768px) {
-        .image img {
-          max-width: 90%;
+        .header {
+          flex-direction: column;
         }
-      }
-
-      @media (max-width: 480px) {
-        .image img {
-          max-width: 100%;
-          max-height: 100%;
+        .header nav ul {
+          flex-direction: column;
+        }
+        .header nav ul li {
+          margin: 10px 0;
         }
       }
     </style>
   </head>
   <body>
-    <section>
-      <div class="header">
-        olá seja bem vindo
-        <ul>
-          <li><a href="#pagina4">Home</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Contato</a></li>
+    <header class="header">
+      <nav>
+        <img>
+          <img src="image.png"/>
+          <ul>
+          <li><a href="#pagina1">Happy Hour</a></li>
+          <li><a href="#pagina3">Bebidas</a></li>
+          <li><a href="#pagina4">Bebidas Alcólicas</a></li>
+          <li><a href="#pagina5">Petiscos</a></li>
+          <li><a href="#pagina2">Espetos Tradicionais</a></li>
+          <li><a href="#pagina2">Á La Carte</a></li>
         </ul>
+      </nav>
+    </header>
+
+    
+      
+      <div class="image">
+        <img src="page1.jpg" alt="Happy hour" />
       </div>
-    </section>
-    <div class="image" id="pagina1">
-      <img src="page1.jpg" alt="Happu our" />
-    </div>
-    <div class="image" id="pagina2">
-      <img src="page2.jpg" alt="Flexbox" />
-    </div>
-    <div class="image" id="pagina3">
-      <img src="page3.jpg" alt="Flexbox" />
-    </div>
-    <div class="image" id="pagina4">
-      <img src="page4.jpg" alt="Flexbox" />
-    </div>
-    <div class="image" id="pagina4">
-      <img src="Page5.png" alt="Flexbox" />
-    </div>
+   
+
+   
+      <div class="image">
+        <img src="page2.jpg" alt="Espetos Tradicionais" />
+      </div>
+      <div class="image">
+        <img src="page6.png" alt="Contato" />
+      </div>
+    
+  
+
+   
+      
+      <div class="image" >
+        <img src="page3.jpg" alt="Flexbox" />
+      </div>
+    
+
+ 
+    
+      <div class="image">
+        <img src="page4.jpg" alt="Home" />
+      </div>
+  
+
+    
+      <div class="image">
+        <img src="page5.png" alt="Sobre" />
+      </div>
+    
+
+ 
+      
   </body>
 </html>
