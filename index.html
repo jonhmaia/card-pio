@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Bueno Cardápio</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .image img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto 20px;
+      }
+      .header {
+        display: flex;
+        flex-direction: row;
+        background-color: #000;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 10px;
+        justify-content: space-between;
+      }
+      .header ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      /* Media query para dispositivos móveis */
+      @media (max-width: 768px) {
+        .image img {
+          max-width: 90%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .image img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="header">
+        olá seja bem vindo
+        <ul>
+          <li><a href="#pagina4">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+    </section>
+    <div class="image" id="pagina1">
+      <img src="page1.jpg" alt="Happu our" />
+    </div>
+    <div class="image" id="pagina2">
+      <img src="page2.jpg" alt="Flexbox" />
+    </div>
+    <div class="image" id="pagina3">
+      <img src="page3.jpg" alt="Flexbox" />
+    </div>
+    <div class="image" id="pagina4">
+      <img src="page4.jpg" alt="Flexbox" />
+    </div>
+  </body>
+</html>
