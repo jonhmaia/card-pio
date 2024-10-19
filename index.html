@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Casa Bueno Cardápio</title>
-    
+
     <style>
       body {
         background-color: #011559;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
         color: #fff;
         margin: 0;
         padding-top: 50px; /* Espaço para o header fixo */
@@ -41,7 +42,7 @@
         color: #011559;
         position: fixed; /* Use fixed para garantir que o botão permaneça visível */
         right: 20px; /* Posiciona o botão no canto direito */
-        top: 15px;   /* Ajusta o botão para ficar no centro verticalmente */
+        top: 15px; /* Ajusta o botão para ficar no centro verticalmente */
         z-index: 1100; /* Garante que o botão esteja visível acima de outros elementos */
       }
 
@@ -142,7 +143,6 @@
     </style>
   </head>
   <body>
-
     <header class="header">
       <img src="image.png" alt="Logo da Casa Bueno" />
       <span class="hamburger" onclick="openNav()">&#9776;</span>
@@ -152,37 +152,43 @@
     <div id="mySidebar" class="sidebar">
       <span class="close-btn" onclick="closeNav()">&times;</span>
       <a href="#Happy" onclick="closeNav()">Happy Hour</a>
-      <a href="#Bebidas" onclick="closeNav()">Bebidas</a>
       <a href="#Alcoolicas" onclick="closeNav()">Bebidas Alcólicas</a>
+      <a href="#Bebidas" onclick="closeNav()">Bebidas</a>
+      <a href="#Saladas" onclick="closeNav()">Saladas e entradas</a>
       <a href="#Petiscos" onclick="closeNav()">Petiscos</a>
-      <a href="#Espetos" onclick="closeNav()">Espetos Tradicionais</a>
       <a href="#ALaCarte" onclick="closeNav()">Á La Carte</a>
+      <a href="#chapas" onclick="closeNav()">Chapas</a>
+      <a href="#Espetos" onclick="closeNav()">Espetos Tradicionais</a>
     </div>
-    <div class="image" >
-      <img src="page1.jpg" alt="Happy Hour" />
+    <div class="image">
+      <img src="1.png" alt="Happy Hour" />
     </div>
     <div class="image" id="Happy">
-      <img src="page2.jpg" alt="Happy Hour" />
-    </div>
-
-    <div class="image" id="Bebidas">
-      <img src="page6.png" alt="Bebidas" />
+      <img src="2.png" alt="Happy Hour" />
     </div>
 
     <div class="image" id="Alcoolicas">
-      <img src="page3.png" alt="Bebidas Alcólicas" />
+      <img src="3.png" alt="Bebidas Alcoolicas" />
     </div>
 
+    <div class="image" id="Bebidas">
+      <img src="4.png" alt="Bebidas " />
+    </div>
+
+    <div class="image" id="Saladas">
+      <img src="5.png" alt="Saladas" />
+    </div>
     <div class="image" id="Petiscos">
-      <img src="page4.png" alt="Petiscos" />
-    </div>
-
-   
-    <div class="image" id="Espetos">
-      <img src="page5.png" alt="Espetos Tradicionais" />
+      <img src="6.png" alt="Petiscos" />
     </div>
     <div class="image" id="ALaCarte">
-      <img src="page7.png" alt="À La Carte" />
+      <img src="7.png" alt="À La Carte" />
+    </div>
+    <div class="image" id="chapas">
+      <img src="8.png" alt="Chapas" />
+    </div>
+    <div class="image" id="Espetos">
+      <img src="9.png" alt="Espetos Tradicionais" />
     </div>
 
     <script>
@@ -196,6 +202,5 @@
         document.getElementById("mySidebar").style.width = "0";
       }
     </script>
-
   </body>
 </html>
